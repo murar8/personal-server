@@ -1,5 +1,7 @@
 {
-    "files": ["index.ts"],
+    "files": ["./index.ts"],
+
+    "include": ["./services"],
 
     "compilerOptions": {
         "strict": true,

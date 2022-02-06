@@ -15,5 +15,6 @@ module.exports = {
     },
     rules: {
         "@typescript-eslint/no-non-null-assertion": "off",
+        "node/no-missing-import": ["error", { tryExtensions: [".js", ".ts"] }],
     },
 };

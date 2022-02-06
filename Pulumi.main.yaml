@@ -1,4 +1,10 @@
 config:
+    billing-limit:billing-account: 01E33A-99A3C8-4F0428
+    billing-limit:threshold: 0.8
+    billing-limit:amount: "50"
+    billing-limit:currency: EUR
+    gcp:billing_project: development-server-murar8
     gcp:project: development-server-murar8
     gcp:region: europe-west3
+    gcp:user_project_override: "true"
     gcp:zone: europe-west3-b
