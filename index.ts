@@ -1,13 +1,13 @@
 // import * as pulumi from "@pulumi/pulumi";
 import * as gcp from "@pulumi/gcp";
 
-const managerApi = new gcp.projects.Service("server-compute-api", {
+const managerApi = new gcp.projects.Service("manager-api", {
     service: "cloudresourcemanager.googleapis.com",
     disableDependentServices: true,
 });
 
 const computeApi = new gcp.projects.Service(
-    "server-compute-api",
+    "compute-api",
     {
         service: "compute.googleapis.com",
         disableDependentServices: true,
