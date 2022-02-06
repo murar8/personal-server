@@ -1,10 +1,19 @@
 // import * as pulumi from "@pulumi/pulumi";
 import * as gcp from "@pulumi/gcp";
 
-const computeApi = new gcp.projects.Service("server-compute-api", {
-    service: "compute.googleapis.com",
+const managerApi = new gcp.projects.Service("server-compute-api", {
+    service: "cloudresourcemanager.googleapis.com",
     disableDependentServices: true,
 });
+
+const computeApi = new gcp.projects.Service(
+    "server-compute-api",
+    {
+        service: "compute.googleapis.com",
+        disableDependentServices: true,
+    },
+    { dependsOn: managerApi }
+);
 
 const externalIp = new gcp.compute.Address("server-address", {}, { dependsOn: computeApi });
 
