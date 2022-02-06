@@ -2,7 +2,7 @@
     "name": "personal-server",
     "version": "0.1.0",
     "author": "Lorenzo Murarotto <lnzmrr@gmail.com>",
-    "repository": "https://github.com/murar8/sweepstake",
+    "repository": "https://github.com/murar8/personal-server",
     "license": "MIT",
     "engines": {
         "node": ">=14.0.0"
