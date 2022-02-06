@@ -8,11 +8,13 @@
         "node": ">=14.0.0"
     },
     "scripts": {
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "lint:prettier": "prettier --check .",
+        "lint:eslint": "eslint ."
     },
     "dependencies": {
-        "@pulumi/google-native": "^0.14.0",
-        "@pulumi/pulumi": "^3.0.0"
+        "@pulumi/gcp": "^6.10.0",
+        "@pulumi/pulumi": "^3.24.1"
     },
     "devDependencies": {
         "@types/node": "^14",
