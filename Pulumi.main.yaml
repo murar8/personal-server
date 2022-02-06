@@ -1,2 +1,3 @@
 config:
-  gcp:project: development-server-murar8
+  google-native:project: development-server-murar8
+  google-native:zone: europe-west3-b
